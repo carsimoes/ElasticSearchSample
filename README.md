@@ -1,6 +1,6 @@
 # ElasticSearchSample
 
-The `ElasticSearchSample` repository demonstrates how to integrate Elasticsearch into a .NET application using the NEST client. It provides a foundational structure for performing CRUD operations and implementing search functionality with Elasticsearch.
+The `ElasticSearchSample` repository demonstrates how to integrate Elasticsearch into a .NET application using the Elasticsearch .NET Client. It provides a foundational structure for performing CRUD operations and implementing search functionality with Elasticsearch.
 
 ## Features
 
