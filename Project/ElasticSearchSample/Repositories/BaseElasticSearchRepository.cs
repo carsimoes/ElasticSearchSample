@@ -133,19 +133,6 @@ namespace ElasticSearchSample.Repositories
             return entity;
         }
 
-        private static Query BuildMultiMatchQuery<T>(string queryValue) where T : class
-        {
-            var fields = typeof(T).GetProperties().Select(p => p.Name.ToLower()).ToArray();
-
-            return new MultiMatchQuery
-            {
-                Query = queryValue,
-                Fields = fields,
-                Type = TextQueryType.Phrase,
-                Lenient = true
-            };
-        }
-
         private static IEnumerable<T> GetResponseWithInternalIds(SearchResponse<T> response)
         {
             return response.Hits
